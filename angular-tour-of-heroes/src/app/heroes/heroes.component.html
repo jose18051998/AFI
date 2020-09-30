@@ -1,10 +1,9 @@
 <h2>My heroes</h2>
 <ul class="heroes">
-  <li *ngFor="let hero of heroes"
-      [class.selected]="hero === selectedHero"
-      (click)="onSelect(hero)">
-    <span class="badge">{{hero.id}} </span>{{hero.name}}
+  <li *ngFor="let hero of heroes">
+    <a routerLink="/detail/{{hero.id}}"><span class="badge">{{hero.id}} </span>{{hero.name}}</a>
   </li>
 </ul>
+<!--Esto ya no se utiliza, pero lo dejo comentado por si me quiero acordar del property binding.-->
 <!--Aqui hacemos un "property binding" de selectedHero a la propiedad/variable hero de hero-detail-->
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<!--<app-hero-detail [hero]="selectedHero"></app-hero-detail>-->
