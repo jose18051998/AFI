@@ -7,6 +7,6 @@
     "\\src\\app\\heroes",
     "\\src\\app\\messages"
   ],
-  "SelectedNode": "\\src\\app\\heroes\\heroes.component.ts",
+  "SelectedNode": "\\src\\app\\hero-detail\\hero-detail.component.html",
   "PreviewInSolutionExplorer": false
 }
